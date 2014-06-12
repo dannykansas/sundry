@@ -6,7 +6,7 @@ TO = "********@messaging.sprintpcs.com"
 FROM = "instantiate@whatever.org"
 i = 0
 while i < 5:
-	FROM = "STCFOREVER" + str(i) + "@spamtec.org"
+	FROM = "ANYTHINGBUTYOURNAME" + str(i) + "@spamhous.org"
 	text = "ALL HAIL THE SPAM GOD."
 	BODY = string.join((
         	"From: %s" % FROM,
