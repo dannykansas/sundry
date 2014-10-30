@@ -8,7 +8,7 @@ use strict;
 for(0..100) {
   my($response);
   my($SOCKET) = new IO::Socket::INET( Proto   => "tcp",
-                                      PeerAddr=> "target.com:80");
+                                      PeerAddr=> "puppet.mysidewalk.com:80");
   if (! defined $SOCKET) { die $!; }
   print $SOCKET "GET /?$_ HTTP/1.0nn";
   $response = <$SOCKET>;
